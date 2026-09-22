@@ -7,7 +7,138 @@
         <title>MP1</title>
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <nav id="navbar">
+            <div class="nav-content">
+
+                <a href="#home" class="logo">
+                    AV
+                </a>
+
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#video">Video</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <header id="home" class="hero">
+            <div class="hero-content">
+                <h1>Adrian Vargas</h1>
+                <p>Computer Science Student</p>
+                <a href="#projects">View My Work</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>I'm a computer science student interested in software, technology, and web development.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-content">
+                <h2>Projects</h2>
+
+                <div class="project-grid">
+
+                    <article class="project-card">
+                        <h3>Project One</h3>
+                        <p>Description...</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Project Two</h3>
+                        <p>Description...</p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Project Three</h3>
+                        <p>Description...</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="section-content">
+                <h2>Featured Work</h2>
+
+                <div class="carousel">
+
+                    <button class="carousel-prev">
+                        ←
+                    </button>
+
+                    <div class="carousel-slides">
+                        <!-- 3+ slides -->
+                    </div>
+
+                    <button class="carousel-next">
+                        →
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="background-section">
+            <div class="section-content">
+                <h2>Learning Through Experience</h2>
+                <p>Building projects is how I turn ideas into something real.</p>
+            </div>
+        </section>
+
+        <section id="video">
+            <div class="section-content">
+                <h2>See My Work</h2>
+
+                <video controls>
+                    <source src="assets/nature_stock.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+        </section>
+
+ 
+        <section id="contact">
+            <div class="section-content">
+                <h2>Contact</h2>
+                <p>Want to get in touch?</p>
+
+                <button id="open-modal">
+                    Contact Me
+                </button>
+            </div>
+        </section>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <button id="close-modal">×</button>
+
+                <h2>Contact Me</h2>
+                <p>Email: example@example.com</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+
+                <p>© 2026 Adrian Vargas</p>
+
+                <div class="social-links">
+                    <!-- GitHub icon -->
+                    <!-- LinkedIn icon -->
+                    <!-- Instagram icon -->
+                </div>
+
+            </div>
+        </footer>
     </body>
 </html>
