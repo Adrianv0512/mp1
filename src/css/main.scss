@@ -412,3 +412,51 @@ footer {
         background-attachment: scroll;
     }
 }
+
+.carousel-slide {
+    display: none;
+    padding: 2rem;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#navbar {
+    transition: all 0.3s ease;
+}
+
+#navbar .nav-content {
+    padding: 1.5rem 2rem;
+    transition: padding 0.3s ease;
+}
+
+#navbar .logo {
+    font-size: 1.8rem;
+    transition: font-size 0.3s ease;
+}
+
+#navbar .nav-links a {
+    font-size: 1.1rem;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+#navbar.navbar-small .nav-content {
+    padding: 0.7rem 2rem;
+}
+
+#navbar.navbar-small .logo {
+    font-size: 1.4rem;
+}
+
+#navbar.navbar-small .nav-links a {
+    font-size: 0.9rem;
+}
