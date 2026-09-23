@@ -159,3 +159,35 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("navbar-small");
     }
 });
+
+
+const openModalButton = document.getElementById("open-modal");
+const closeModalButton = document.getElementById("close-modal");
+const modal = document.getElementById("contact-modal");
+
+openModalButton.addEventListener("click", function () {
+    modal.classList.add("open");
+    closeModalButton.focus();
+});
+
+closeModalButton.addEventListener("click", function () {
+    modal.classList.remove("open");
+    openModalButton.focus();
+});
+
+modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+        modal.classList.remove("open");
+        openModalButton.focus();
+    }
+});
+
+document.addEventListener("keydown", function (event) {
+    if (
+        event.key === "Escape" &&
+        modal.classList.contains("open")
+    ) {
+        modal.classList.remove("open");
+        openModalButton.focus();
+    }
+});

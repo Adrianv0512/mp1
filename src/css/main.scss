@@ -460,3 +460,11 @@ footer {
 #navbar.navbar-small .nav-links a {
     font-size: 0.9rem;
 }
+
+.modal {
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
